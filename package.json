@@ -7,7 +7,10 @@
   },
   "esy": {
     "build": [
+      ["echo", "ls", "src/wrapped/c"],
       ["ls", "src/wrapped/c"],
+      ["echo", "ls", "#{$SKIA_INCLUDE_PATH}"],
+      ["ls", "#{$SKIA_INCLUDE_PATH}"],
       [
         "refmterr",
         "dune",
